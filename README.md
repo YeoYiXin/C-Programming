@@ -2,7 +2,7 @@
  Projects done with C 
 1. Only projects written in C but with .cpp extensions is worked on using C-Free Standard. The other projects are coded with VS Code<br/>
 <br/>
-# Theme-Park-Booking-System
+<b>Theme-Park-Booking-System</b><br/>
  This is a program which books tickets for a theme park (a booking system). The theme park has only 40 persons capacity. The visitors may be local and international. <br/><br/>
  The program can perform following tasks:<br/>
  1. Add a new visitor information which must have the following:<br/>
