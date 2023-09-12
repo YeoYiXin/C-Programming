@@ -22,7 +22,7 @@ The booking system should generate an output file “Tickets.txt”<br/><br/>
 Extra information: <br/>
 1. The search operation should match the name regardless of the capitalization or small alphabets.
 For example; if someone search “yeo yi xin” or “yeo Yi XiN” or “YEO YI XIN” the search
-function should provide the information of “Yasir_Hafeez”, meaning both should be considered
+function should provide the information of “Yeo_Yi_Xin”, meaning both should be considered
 same.<br/>
 NOTE: If more than one visitors have same name then it should display all the visitors with the
 same name. <br/>
