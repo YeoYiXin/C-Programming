@@ -1,0 +1,248 @@
+Q1a. pseudocode
+
+
+PROGRAM Q1a:
+  Start;
+	Initialize a with 4.5 and, square_val and cube_val with 0;
+	Enter a new line;
+	Print the three strings, “number”, “square” and “cube”;
+	FOR (a increment by 4.5 until it smaller than or equal to 10000)
+		Calculate the square value of variable a;
+		Calculate the cube value of variable a;
+		Print the value of a, square_val and cube_val; 
+	END FOR;
+	Return 0 which tells the compiler that it has finished compiling successfully;
+  END.
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Q1b. pseudocode
+
+PROGRAM Q1b:
+  Start;
+	Initialize a with 5 and, square_val and cube_val with 0;
+	Enter a new line;
+	Print the three strings, “number”, “square” and “cube”s;
+	FOR (a increment by 5 until it is smaller than or equal to 10000)
+		Calculate the square value of variable a;
+		Calculate the cube value of variable a;
+		Print the value of a, square_val and cube_val; 
+	END FOR;
+	Return 0 which tells the compiler that it has finished compiling successfully;
+  END.
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Q2. pseudocode
+
+PROGRAM Q2:
+  Start;
+	Initialize rows, i and j with 0;
+	FOR (rows=0 increment to rows smaller than 10)
+		FOR (i=0 increment to i smaller than or equal to rows)
+			Print ^;
+		END FOR;
+		Enter a new line;
+	END FOR;
+	Enter a new line;
+	FOR (rows=0 increment to rows smaller than 10)
+		FOR (i=9 decrement until i greater than or equal to rows)
+			Print ^;
+		END FOR;
+		Enter a new line;
+	END FOR;
+	Enter a new line;
+	FOR (rows=0 increment to rows smaller than 10)
+		FOR (i=0 increment until i smaller than or equal to rows)
+			Print empty space;
+		END FOR;	
+		FOR (j=9 decrement until j is no longer greater than or equal to rows)
+			Print ^;
+		END FOR;
+		Enter a new line;
+	END FOR;
+	Enter a new line;
+	FOR (rows=0 increment to rows smaller than 10)
+		FOR (i=9 decrement until i is greater than or equal to rows)
+			Print empty space;
+		END FOR;	
+		FOR (j=0 increment until j is smaller than or equal to rows)
+			Print ^;
+		END FOR;
+		Enter a new line;
+	END FOR;
+	Enter a new line;
+	Return 0 which tells the compiler that it has finished compiling successfully;
+  END.
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Q3. pseudocode
+
+PROGRAM Q3:
+  Start;
+	Initialize worker_job, working_day and packed_item with 0;
+	Intialize manager_salary, dailyworker_salary, overtime_hour, hourlyworker_salary, working_hours, working_hours, 
+	a, b, c, d, e and laboursalary with 0;
+	Initialize choice and choice2;
+	Print the title “Worker Salary Calculator”;
+	Print heading line;
+	Prompt user to start or end the program;
+	WHILE (choice is neither y, Y, n nor N)
+		Print that there is no such choice;
+		Prompt user to start or end the program;
+	END WHILE;
+	IF (choice is either N or n)
+		Print “Thank you. See you next time!”;
+		Return 0 which tells the compiler that it has finished compiling successfully;
+	END IF;
+	WHILE (choice is either y or Y)
+		Clear the system output;
+		Print the description of employee code;
+		Prompt user for worker employee code;
+		SWITCH (the employee code that user input)
+		Case 1:
+			Print out employee code 1;
+			Print out the work position which is manager;
+			Print out the description of the salary for manager;
+			Prompt user for monthly salary of manager;
+			WHILE (manager_salary is lesser or equal to 0 or greater than 30000)
+				IF (manager_salary is lesser or equal to 0)
+					Print out warning that there is negative value;
+					Prompt user to type in the monthly salary;
+				END IF;
+				IF (manager_salary is greater than 30000)
+					Print out warning that salary is too large;
+					Prompt user to type in the monthly salary;
+				END IF
+			END WHILE;
+			Print the salary of the manager;
+			Break;
+		Case 2:
+			Print out employee code 2;
+			Print out the work position which is daily worker;
+			Print out the description of the salary for daily worker;
+			Prompt user for basic monthly salary of daily worker;
+			WHILE (dailyworker_salary is lesser or equal to 0 or greater than 10000)
+				IF (dailyworker_salary is lesser or equal to 0)
+					Print out warning that there is negative value;
+					Prompt user to type in the basic monthly;
+				END IF;
+				IF (dailyworker_salary is greater than 10000)
+					Print out that user has input salary that is too large;
+					Prompt user to type in the basic monthly salary;
+				END IF
+			END WHILE;
+			Prompt user to input working days for a week; 
+			WHILE (working_day is more than 7 or less than 0)
+				Print out that the input is not logic;
+				Print out that user can only work for at most 7 days a week where the 7th day is an extra day;
+				Prompt user to input working days for a week;
+			END WHILE;
+			IF (working_day is equal to 7)
+				Multiply working_day with 4;
+				Divide dailyworker_salary with a;
+				Multiply the variable b with 2/3;
+				Print out that considering that the worker works the same number of working days for a month;
+				Multiply the variable c with 4;
+				Print out the overtime pay for the whole month;
+				Add d with dailyworker_salary;
+				Print out the salary of daily worker;
+			ELSE
+				Print out the salary of daily worker;
+			END IF-ELSE;
+			Break;
+		Case 3:
+			Print out employee code 3;
+			Print out the work position which is hourly worker;
+			Print out the description of the salary for hourly worker;
+			Prompt user for hourly wage of hourly worker;
+			WHILE (hourlyworker_salary is lesser or equal to 0 or greater than 100)
+	 			IF (hourlyworker_salary is lesser or equal to 0)
+					Print out warning that there is negative value;
+					Prompt user to type in the hourly wage;
+				END IF;
+				IF (hourlyworker_salary is greater than 100)
+					Print out warning that the value is too big;
+					Prompt user to type in the hourly wage;
+				END IF
+			END WHILE;	
+			Print out that considering that the worker works the same number of hours for a month;
+			Prompt user for number of hours they have worked in one week;
+			WHILE (working_hours less than 0)
+				Print out warning that there is negative value;
+				Prompt user to type in working hours;
+			END WHILE;
+			IF (working_hours is more than 50)
+				Multiply hourlyworker_salary with 50;
+				Multiply working_hours minus 50 with hourlyworker_salary divided by 2;
+				Multiply b with 4;
+				Add a and b;
+				Multiply d with 4;
+				Print overtime pay for a month;
+				Print hourlyworker_salary;
+			ELSE
+				Multiply working_hours with hourlyworker_salary;
+				Multiply a with 4;
+				Print hourlyworker_salary;
+			END IF-ELSE;
+			Break;			
+		Case 4:
+			Print out employee code 4;
+			Print out the work position which is commission worker;
+			Print out the description of the salary for commission worker;
+			Prompt user for total sale;
+			WHILE (commissionworker_salary is lesser or equal to 0 or greater than 10000)
+				IF (commissionworker_salary is lesser or equal to 0)
+					Print out warning that there is negative value;
+					Prompt user to type in the total sale;
+				END IF;
+				IF (commissionworker_salary is greater than 10000)
+					Print out that total sale is too large;
+					Prompt user to type in the total sale;
+				END IF
+			END WHILE;		
+			Print out that considering that the worker works the same number of working days for a month;
+			Multiply commissionworker_salary with 0.059;
+			Multiply a with 4;
+			Add 230 multiply with 4 with b;
+			Print this month commission;
+			Print commissionworker_salary;
+			Break;
+		Case 5:
+			Print out employee code 5;
+			Print out the work position which is labour at product packing;
+			Print out the description of the salary labour at product packing;
+			Prompt user for total sum of total item packed for this week;
+			WHILE (packed_item is lesser or equal to 0 or greater than  1000000)
+				IF (packed_item is lesser or equal to 0)
+					Print out warning that there is negative value;
+					Prompt user for sum of total item packed;
+				END IF;
+				IF (packed_item is greater than 1000000)
+					Print out that total sale is too large;
+					Prompt user for sum of total item packed;
+				END IF
+			END WHILE;		
+			Print out that considering the worker have the same total sum of total item packed every week;
+			Multiply packed_item with 0.0005;
+			Multiply a with 4;
+			Print laboursalary;
+			Break;
+		DEFAULT:
+			Print that there is no such choices;qs
+		END SWITCH;
+		Prompt user to choose whether they want to calculate salary again.
+		IF (choice 2 is equal to 'N' or 'n')
+			Print thank you;
+			Break;
+		END IF;
+	END WHILE;
+	Return 0 which tells the compiler that it has finished compiling successfully;
+  END.
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
