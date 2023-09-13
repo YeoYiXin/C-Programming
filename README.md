@@ -1,6 +1,13 @@
 # C-Programming
- Projects done with C 
-1. Only projects written in C but with .cpp extensions is worked on using C-Free Standard. The other projects are coded with VS Code<br/>
+ <br/>
+ Notes: Only projects written in C but with .cpp extensions is worked on using C-Free Standard. The other projects are coded with VS Code<br/>
+<br/>
+<ul>
+ <li>In Lab Assessment 1, I have applied arithmetic operation and program controls.</li>
+ <li>In Lab Assessment 2, I have implemented the program with arithmetic operation, program controls, functions, arrays, bubble sort algorithms, recursive linear search function and recursive function that prints string in reverse order.</li>
+ <li>In Lab Assessment 3, I have applied arithmetic operation, program controls, functions, arrays, pointers and string.h libraries built-in functions to complete the program.	
+</li>
+</ul>
 <br/>
 <b>Theme-Park-Booking-System</b><br/>
  This is a program which books tickets for a theme park (a booking system). The theme park has only 40 persons capacity. The visitors may be local and international. <br/><br/>
