@@ -1,6 +1,10 @@
 # C-Programming
  <br/>
- Notes: Only projects written in C but with .cpp extensions is worked on using C-Free Standard. The other projects are coded with VS Code<br/>
+Only projects written in C but with .cpp extensions is worked on using C-Free Standard. I have created digital clock which increment automatically from 00:00:00 and shows the current day and date while the morse code program can encode strings in morse code and decode morse code into string.
+ <br/> <hr>
+ <br/>
+ The other projects are implemented using VS Code.
+<br/>
 <br/>
 <ul>
  <li>In Lab Assessment 1, I have applied arithmetic operation and program controls.</li>
